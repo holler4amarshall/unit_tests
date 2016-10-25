@@ -5,7 +5,10 @@ def divide_pay(amount, staff_hours):
     """
     total_hours = 0
     for person in staff_hours:
-        total_hours += staff_hours[person]
+        if staff_hours[person] < 0: 
+            raise ValueError("Staff hours below zero. Please enter a number of hours worked above 0")
+        else: 
+            total_hours += staff_hours[person]
 
     if total_hours == 0:
         raise ValueError("No hours entered")
