@@ -5,8 +5,8 @@ class InvoiceCalculatorTests(unittest.TestCase):
     
     def test_divided_correctly(self):
         result = invoice.divide_pay(360, {"Alice": 3.0, "Bob": 3.0, "Carol": 6.0}) #execute function with given input
-        expected_result = {"Alice": 90.0, "Bob": 90.0, "Carol": 180.0} #expected results for given input
-        print("{} = {}".format(result, expected_result))
+        self.assertEqual(result, {"Alice": 90.0, "Bob": 90.0, "Carol": 180.0}) #assert result = expected results calculated manually
+        
                 
     def test_correct_decimal_hours(self):
         result = invoice.divide_pay(360, {"Alice": 3.5, "Bob": 3.5, "Carol": 6.5}) #execute function with given input
