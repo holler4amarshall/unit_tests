@@ -10,13 +10,17 @@ The tests created cover basic scenarios, and are not intended to be exhaustive.
 To execute the tests: 
 1) Download the project
 2) In the project directory, execute: 
->> python3 test_invoice.py
+
+          python3 test_invoice.py
+
 3) See the results in the console
 
 ##Execute the function
 To execute the function under test: 
 1) In the project directory, execute: 
->> python3 invoice.py 
+
+          python3 invoice.py 
+          
 2) See the results for expected pay in the command line, against default values: 
 Project payment = 360.0, {"
 Hours worked = Alice - 3.0, Bob - 3 & Carol - 6. 
