@@ -19,6 +19,10 @@ class InvoiceCalculatorTests(unittest.TestCase):
     def test_zero_hours_total(self):
        with self.assertRaises(ValueError):
            invoice.divide_pay(360.0, {"Alice": 0.0, "Bob": 0.0, "Carol": 0.0})
+           
+    def test_no_people(self):
+        with self.assertRaises(ValueError):
+            pay = invoice.divide_pay(360.0, {})
         
 
 if __name__ == "__main__":
