@@ -4,11 +4,11 @@ import invoice
 class InvoiceCalculatorTests(unittest.TestCase):
     
     def test_divided_correctly(self):
-        result = invoice.divide_pay(360, {"Alice": 3.0, "Bob": 3.0, "Carol": 6.0})
-        expected_result = {"Alice": 90.0, "Bob": 90.0, "Carol": 180.0}
-        print(result)
+        result = invoice.divide_pay(360, {"Alice": 3.0, "Bob": 3.0, "Carol": 6.0}) #execute function with given input
+        expected_result = {"Alice": 90.0, "Bob": 90.0, "Carol": 180.0} #expected results for given input
         for key in result: 
-            self.assertEqual((result[key]), (expected_result[key]))
+            if not self.assertEqual((result[key]), (expected_result[key])): 
+                print("pass: {} = {}".format((result[key]), (expected_result[key])))
 
 if __name__ == "__main__":
     unittest.main()
