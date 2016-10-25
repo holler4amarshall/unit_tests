@@ -21,9 +21,9 @@ To execute the function under test:
 
           python3 invoice.py 
           
-2) See the results for expected pay in the command line, against default values: 
-Project payment = 360.0, {"
-Hours worked = Alice - 3.0, Bob - 3 & Carol - 6. 
+2) See the results for expected pay in the command line, against default values:
+
+Project payment = 360.0, Hours worked = Alice - 3 hrs, Bob - 3 hrs & Carol - 6 hrs. 
 
 ## Python's unittest module
 For further reference on unittest module, see Python3 documentation: https://docs.python.org/3.4/library/unittest.html#unittest.TestCase.assertEqual
